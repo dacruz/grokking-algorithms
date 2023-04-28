@@ -1,5 +1,6 @@
 package binarysearch
 
+// O(log n)
 func search(n int, ii []int) (int, bool) {
 	l, r := 0, len(ii)-1
 

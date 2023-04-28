@@ -1,5 +1,6 @@
 package selectionsort
 
+// O(nˆ2) - this function has only one loop, but the func findSmallerIndex brings another nested look over **n** into the equation
 func sort(ll []int) []int {
 	sl := make([]int, 0)
 
@@ -12,6 +13,7 @@ func sort(ll []int) []int {
 	return sl
 }
 
+// O(n)
 func findSmallerIndex(nn []int) int {
 	si := 0
 	for i := range nn {

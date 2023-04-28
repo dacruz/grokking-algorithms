@@ -1,5 +1,6 @@
 package recursion
 
+// O(n) - long stack
 func factRec(n int) int {
 
 	if n == 1 {
@@ -9,6 +10,7 @@ func factRec(n int) int {
 	return n * factRec(n-1)
 }
 
+// O(n) - short stack
 func factIte(n int) int {
 	fac := n
 
