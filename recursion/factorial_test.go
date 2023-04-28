@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-var tests = []struct {
+var factTests = []struct {
 	name   string
 	num    int
 	expect int
@@ -16,15 +16,15 @@ var tests = []struct {
 }
 
 func TestRecursiveFactorial(t *testing.T) {
-	exec(t, factRec)
+	execFact(t, factRec)
 }
 
 func TestIterativeFactorial(t *testing.T) {
-	exec(t, factIte)
+	execFact(t, factIte)
 }
 
-func exec(t *testing.T, f func(int) int) {
-	for _, tc := range tests {
+func execFact(t *testing.T, f func(int) int) {
+	for _, tc := range factTests {
 		t.Run(tc.name, func(t *testing.T) {
 			f := f(tc.num)
 			assert.Equal(t, tc.expect, f)

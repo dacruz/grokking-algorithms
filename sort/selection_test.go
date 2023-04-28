@@ -1,4 +1,4 @@
-package selectionsort
+package sort
 
 import (
 	"github.com/stretchr/testify/assert"
@@ -19,7 +19,7 @@ func TestSelectionSort(t *testing.T) {
 
 	for _, tc := range tests {
 		t.Run(tc.name, func(t *testing.T) {
-			sl := sort(tc.list)
+			sl := selection(tc.list)
 			assert.EqualValues(t, tc.expected, sl)
 		})
 	}

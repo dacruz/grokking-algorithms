@@ -1,7 +1,7 @@
-package selectionsort
+package sort
 
 // O(nˆ2) - this function has only one loop, but the func findSmallerIndex brings another nested look over **n** into the equation
-func sort(ll []int) []int {
+func selection(ll []int) []int {
 	sl := make([]int, 0)
 
 	for len(ll) > 0 {
