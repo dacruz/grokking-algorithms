@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestSelectionSort(t *testing.T) {
+func TestQuickSort(t *testing.T) {
 	tests := []struct {
 		name     string
 		list     []int
@@ -20,7 +20,7 @@ func TestSelectionSort(t *testing.T) {
 
 	for _, tc := range tests {
 		t.Run(tc.name, func(t *testing.T) {
-			sl := selection(tc.list)
+			sl := quick(tc.list)
 			assert.EqualValues(t, tc.expected, sl)
 		})
 	}
