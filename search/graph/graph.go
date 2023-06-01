@@ -6,6 +6,7 @@ type node struct {
 
 type vertice struct {
 	n *node
+	w uint
 }
 
 type graph map[*node][]vertice
