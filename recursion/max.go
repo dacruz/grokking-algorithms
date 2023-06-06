@@ -1,5 +1,6 @@
 package recursion
 
+// O(n) - long stack
 func maxRec(nn []int) int {
 	if len(nn) == 0 {
 		return -1
@@ -16,6 +17,7 @@ func maxRec(nn []int) int {
 
 }
 
+// O(n) - short stack
 func maxIte(nn []int) int {
 	max := -1
 	for _, n := range nn {

@@ -14,11 +14,7 @@ func factRec(n int) int {
 func factIte(n int) int {
 	fac := n
 
-	for {
-		if n == 1 {
-			return fac
-		}
-
+	for n != 1 {
 		n--
 		fac = n * fac
 	}

@@ -1,6 +1,6 @@
 package search
 
-// O(log n)
+// O(log n) - short stack
 func binaryIte(n int, ii []int) (int, bool) {
 	l, r := 0, len(ii)-1
 
@@ -20,6 +20,7 @@ func binaryIte(n int, ii []int) (int, bool) {
 	return 0, false
 }
 
+// O(log n) - long stack
 func binaryRec(n int, ii []int) (int, bool) {
 	return bRec(n, ii, 0, len(ii)-1)
 }

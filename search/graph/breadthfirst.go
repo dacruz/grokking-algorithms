@@ -1,5 +1,6 @@
 package graph
 
+// O(V+E)
 func breadthFirst(s *node, e *node, g graph) ([]*node, bool) {
 	q := []*node{s}
 

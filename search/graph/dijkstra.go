@@ -4,6 +4,7 @@ import "math"
 
 const INF = math.MaxUint
 
+// O(Vˆ2) - this Big O is complex. See more: https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
 func dijkstra(s *node, e *node, g graph) ([]*node, uint, bool) {
 
 	vs := newVisitedSet()

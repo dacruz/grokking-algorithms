@@ -1,5 +1,6 @@
 package recursion
 
+// O(n) - short stack
 func sumIte(nn []int) int {
 
 	s := 0
@@ -10,6 +11,7 @@ func sumIte(nn []int) int {
 	return s
 }
 
+// O(n) - long stack
 func sumRec(nn []int) int {
 
 	if len(nn) == 0 {
